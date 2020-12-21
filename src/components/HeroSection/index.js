@@ -2,7 +2,7 @@ import React from "react"
 import { Button } from "../ButtonElements"
 import "./HeroSection.css"
 
-const index = () => {
+const HeroSection = () => {
   return (
     <div className="hero-container">
       <h1>Travel More</h1>
@@ -16,4 +16,4 @@ const index = () => {
   )
 }
 
-export default index
+export default HeroSection

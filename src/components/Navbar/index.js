@@ -16,6 +16,8 @@ const Navbar = () => {
   const [click, setClick] = useState(false)
   const [scroll, setScroll] = useState(false)
 
+  const handleClick = () => setClick(!click)
+
   const changeNav = () => {
     if (window.scrollY >= 80) {
       setScroll(true)
@@ -28,8 +30,6 @@ const Navbar = () => {
     changeNav()
     window.addEventListener("scroll", changeNav)
   }, [])
-
-  const handleClick = () => setClick(!click)
 
   return (
     <>
